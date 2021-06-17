@@ -23,7 +23,7 @@
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
-		<false/>
+		<true/>
 		<key>UISceneConfigurations</key>
 		<dict>
 			<key>UIWindowSceneSessionRoleApplication</key>
@@ -34,6 +34,18 @@
 					<key>UISceneDelegateClassName</key>
 					<string>$(PRODUCT_MODULE_NAME).SceneDelegate</string>
 				</dict>
+				<dict>
+					<key>UISceneDelegateClassName</key>
+					<string>$(PRODUCT_MODULE_NAME).SummonSceneDelegate</string>
+					<key>UISceneConfigurationName</key>
+					<string>Summon Scene Configuration</string>
+				</dict>
+                <dict>
+                    <key>UISceneDelegateClassName</key>
+                    <string>$(PRODUCT_MODULE_NAME).SummonSceneWithDataDelegate</string>
+                    <key>UISceneConfigurationName</key>
+                    <string>Summon Scene With Data Configuration</string>
+                </dict>
 			</array>
 		</dict>
 	</dict>

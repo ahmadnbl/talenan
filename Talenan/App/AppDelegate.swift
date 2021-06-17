@@ -20,9 +20,34 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     // MARK: UISceneSession Lifecycle
 
     func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
-        // Called when a new scene session is being created.
-        // Use this method to select a configuration to create the new scene with.
-        return UISceneConfiguration(name: "Default Configuration", sessionRole: connectingSceneSession.role)
+        var currentActivity: ActivityIdentifier
+        var userInfo = [String:Any]()
+        
+        if
+            let activity = options.userActivities.first,
+            let activityIdentifier = ActivityIdentifier(rawValue: activity.activityType)
+        {
+            currentActivity = activityIdentifier
+            activity.userInfo?.forEach { key, value in
+                guard let keyString = key as? String else { return }
+                userInfo[keyString] = value
+            }
+        } else {
+            currentActivity = .main
+        }
+        
+        let sceneConfig = currentActivity.sceneConfiguration()
+        
+        if connectingSceneSession.userInfo == nil {
+            connectingSceneSession.userInfo = [:]
+        }
+        
+        connectingSceneSession.userInfo?["type"] = currentActivity.rawValue
+        userInfo.forEach { key, value in connectingSceneSession.userInfo?[key] = value }
+        
+        return sceneConfig
+        
+        // return UISceneConfiguration(name: "Summon Scene Configuration", sessionRole: connectingSceneSession.role)
     }
 
     func application(_ application: UIApplication, didDiscardSceneSessions sceneSessions: Set<UISceneSession>) {

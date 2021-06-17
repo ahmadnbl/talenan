@@ -13,6 +13,16 @@
 		28ACD367267650D400C2A74C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28ACD366267650D400C2A74C /* Assets.xcassets */; };
 		28ACD36A267650D400C2A74C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28ACD369267650D400C2A74C /* Preview Assets.xcassets */; };
 		28ACD36D267650D400C2A74C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28ACD36B267650D400C2A74C /* LaunchScreen.storyboard */; };
+		28ACD3762676512A00C2A74C /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28ACD3752676512A00C2A74C /* MenuItem.swift */; };
+		28ACD37D267669C600C2A74C /* GettingWindowUIKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28ACD37C267669C600C2A74C /* GettingWindowUIKitViewController.swift */; };
+		28ACD37F26766A1400C2A74C /* GettingWindowUIKitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28ACD37E26766A1400C2A74C /* GettingWindowUIKitView.swift */; };
+		28ACD3822679D00200C2A74C /* SceneDebuggerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28ACD3812679D00200C2A74C /* SceneDebuggerView.swift */; };
+		28ACD3C9267A6D9500C2A74C /* SummonScenePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28ACD3C8267A6D9500C2A74C /* SummonScenePageView.swift */; };
+		28ACD3CC267A727D00C2A74C /* SceneConfigurationNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28ACD3CB267A727D00C2A74C /* SceneConfigurationNames.swift */; };
+		28ACD3CE267A733100C2A74C /* SummonSceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28ACD3CD267A733100C2A74C /* SummonSceneDelegate.swift */; };
+		28ACD3D0267A7B2500C2A74C /* ActivityIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28ACD3CF267A7B2500C2A74C /* ActivityIdentifier.swift */; };
+		28ACD3D2267AD62E00C2A74C /* SummonSceneWithDataDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28ACD3D1267AD62E00C2A74C /* SummonSceneWithDataDelegate.swift */; };
+		28ACD3D4267AD68700C2A74C /* PreviewSummonedPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28ACD3D3267AD68700C2A74C /* PreviewSummonedPageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +34,16 @@
 		28ACD369267650D400C2A74C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		28ACD36C267650D400C2A74C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		28ACD36E267650D400C2A74C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28ACD3752676512A00C2A74C /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
+		28ACD37C267669C600C2A74C /* GettingWindowUIKitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GettingWindowUIKitViewController.swift; sourceTree = "<group>"; };
+		28ACD37E26766A1400C2A74C /* GettingWindowUIKitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GettingWindowUIKitView.swift; sourceTree = "<group>"; };
+		28ACD3812679D00200C2A74C /* SceneDebuggerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDebuggerView.swift; sourceTree = "<group>"; };
+		28ACD3C8267A6D9500C2A74C /* SummonScenePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummonScenePageView.swift; sourceTree = "<group>"; };
+		28ACD3CB267A727D00C2A74C /* SceneConfigurationNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneConfigurationNames.swift; sourceTree = "<group>"; };
+		28ACD3CD267A733100C2A74C /* SummonSceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummonSceneDelegate.swift; sourceTree = "<group>"; };
+		28ACD3CF267A7B2500C2A74C /* ActivityIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIdentifier.swift; sourceTree = "<group>"; };
+		28ACD3D1267AD62E00C2A74C /* SummonSceneWithDataDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummonSceneWithDataDelegate.swift; sourceTree = "<group>"; };
+		28ACD3D3267AD68700C2A74C /* PreviewSummonedPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewSummonedPageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +76,9 @@
 		28ACD35F267650D200C2A74C /* Talenan */ = {
 			isa = PBXGroup;
 			children = (
-				28ACD360267650D200C2A74C /* AppDelegate.swift */,
-				28ACD362267650D200C2A74C /* SceneDelegate.swift */,
-				28ACD364267650D200C2A74C /* ContentView.swift */,
+				28ACD3772676548D00C2A74C /* App */,
+				28ACD3742676511000C2A74C /* Constants */,
+				28ACD3782676549B00C2A74C /* Views */,
 				28ACD366267650D400C2A74C /* Assets.xcassets */,
 				28ACD36B267650D400C2A74C /* LaunchScreen.storyboard */,
 				28ACD36E267650D400C2A74C /* Info.plist */,
@@ -73,6 +93,64 @@
 				28ACD369267650D400C2A74C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		28ACD3742676511000C2A74C /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				28ACD3752676512A00C2A74C /* MenuItem.swift */,
+				28ACD3CB267A727D00C2A74C /* SceneConfigurationNames.swift */,
+				28ACD3CF267A7B2500C2A74C /* ActivityIdentifier.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		28ACD3772676548D00C2A74C /* App */ = {
+			isa = PBXGroup;
+			children = (
+				28ACD360267650D200C2A74C /* AppDelegate.swift */,
+				28ACD362267650D200C2A74C /* SceneDelegate.swift */,
+				28ACD3CD267A733100C2A74C /* SummonSceneDelegate.swift */,
+				28ACD3D1267AD62E00C2A74C /* SummonSceneWithDataDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		28ACD3782676549B00C2A74C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				28ACD3CA267A6D9B00C2A74C /* SummonScenePageView */,
+				28ACD3802679CFF100C2A74C /* SceneDebugger */,
+				28ACD37B2676699800C2A74C /* GettingWindowUIKit */,
+				28ACD364267650D200C2A74C /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		28ACD37B2676699800C2A74C /* GettingWindowUIKit */ = {
+			isa = PBXGroup;
+			children = (
+				28ACD37C267669C600C2A74C /* GettingWindowUIKitViewController.swift */,
+				28ACD37E26766A1400C2A74C /* GettingWindowUIKitView.swift */,
+			);
+			path = GettingWindowUIKit;
+			sourceTree = "<group>";
+		};
+		28ACD3802679CFF100C2A74C /* SceneDebugger */ = {
+			isa = PBXGroup;
+			children = (
+				28ACD3812679D00200C2A74C /* SceneDebuggerView.swift */,
+			);
+			path = SceneDebugger;
+			sourceTree = "<group>";
+		};
+		28ACD3CA267A6D9B00C2A74C /* SummonScenePageView */ = {
+			isa = PBXGroup;
+			children = (
+				28ACD3C8267A6D9500C2A74C /* SummonScenePageView.swift */,
+				28ACD3D3267AD68700C2A74C /* PreviewSummonedPageView.swift */,
+			);
+			path = SummonScenePageView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,9 +223,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28ACD3822679D00200C2A74C /* SceneDebuggerView.swift in Sources */,
+				28ACD3762676512A00C2A74C /* MenuItem.swift in Sources */,
+				28ACD37D267669C600C2A74C /* GettingWindowUIKitViewController.swift in Sources */,
+				28ACD3C9267A6D9500C2A74C /* SummonScenePageView.swift in Sources */,
+				28ACD3D2267AD62E00C2A74C /* SummonSceneWithDataDelegate.swift in Sources */,
+				28ACD3D4267AD68700C2A74C /* PreviewSummonedPageView.swift in Sources */,
+				28ACD3CC267A727D00C2A74C /* SceneConfigurationNames.swift in Sources */,
 				28ACD361267650D200C2A74C /* AppDelegate.swift in Sources */,
 				28ACD363267650D200C2A74C /* SceneDelegate.swift in Sources */,
+				28ACD37F26766A1400C2A74C /* GettingWindowUIKitView.swift in Sources */,
+				28ACD3CE267A733100C2A74C /* SummonSceneDelegate.swift in Sources */,
 				28ACD365267650D200C2A74C /* ContentView.swift in Sources */,
+				28ACD3D0267A7B2500C2A74C /* ActivityIdentifier.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
